@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #D5F5E3;
+    color:  #145A32 ;
+    font-size: 24px;     
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+ /*
+ ==========================================
+                INICIO
+ ==========================================
+ */
+.Inicio{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Img/Leaves.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    
+}
+
+
+.Title {
+    color: #EAFAF1;
+    font-family: 'EB Garamond', serif;
+    font-size: 50px;
+    font-weight: bold;
+    Margin: 50px 50px;
+    
+    text-shadow: 2px 0 0 Black, 0 -2px 0 black, 0 2px 0 black, -2px 0 0 black;
+    
+
+}
+
+.NavBar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: auto;
+    margin-bottom: 25px;
+    
+
+}
+
+
+ .Btn:hover {
+     animation: AbrirNav 0.5s forwards, DarColor 0.5s forwards;
+     text-shadow: none;
+     
+ }
+
+ .Btn {
+    color: white;
+    text-decoration-line: none;
+    text-shadow: 2px 0 0 Black, 0 -2px 0 black, 0 2px 0 black, -2px 0 0 black;
+    font-weight: bold;
+    border: 2px solid #EAFAF1;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    flex : 1;
+    margin: 5px 5px;
+    animation: SacarColor 1s, CerrarNav 1s;
+    
+    
+}
+ /*
+ ==========================================
+                ANIMACIONES
+ ==========================================
+ */
+ @keyframes AbrirNav {
+     
+    from {
+        flex: 1;
+    }
+    to {
+        flex: 2;
+    }
+ }
+
+ @keyframes CerrarNav {
+     from{
+         flex: 2;
+     }
+     to{
+         flex: 1;
+     }
+ }
+
+ @keyframes DarColor {
+    from{
+        background-color: transparent;
+        color: #EAFAF1;
+        border-color: white;
+        text-shadow: 2px 0 0 Black, 0 -2px 0 black, 0 2px 0 black, -2px 0 0 black;
+    } 
+    to{
+         background-color: #EAFAF1;
+         color:#145A32;
+         border-color: #145A32;
+         text-shadow: none;
+     }
+ }
+
+ @keyframes SacarColor{
+    from{
+        background-color: #EAFAF1;
+        color:#145A32 ;
+        border-color: #145A32;
+        text-shadow: none;
+    } 
+    to{
+         background-color: transparent;
+         color: #EAFAF1;
+         border-color: white;
+         text-shadow: 2px 0 0 Black, 0 -2px 0 black, 0 2px 0 black, -2px 0 0 black;
+     }
+ }
+
+ /*
+ ==========================================
+                ARTICULO
+ ==========================================
+ */
+
+ .contenido {
+    display: flex;
+    width: 100%;
+    background-color: #D5F5E3;
+    color: #145A32;
+    margin-bottom: 20px;
+ }
+
+ .articulos{
+     width: 75%;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+    
+     
+ }
+
+ .art {
+     display: flex;
+     width: 100%;
+     justify-content: space-between;
+     margin-top: 30px;
+ }
+ 
+
+.informacion{
+    width: 75%; 
+}
+.Causas, .Tipos {
+    margin-left: 20px;
+
+}
+
+.tipo, .causas, .enfermedades, .consejos{
+    margin-left: 40px;
+}
+
+.tipos-enfermedades{
+    margin-left: 60px;
+}
+
+
+
+
+.imagen {
+    width:24%;
+    height: 50%;
+}
+.img{
+    width:100%;
+
+}
+
+.artproblemas {
+    justify-content: center;
+}
+.artproblemas .imagen {
+    width: 20%;
+}
+
+.imgProblemas {
+    width: 75%;
+}
+ 
+.separador {
+    margin-top: 10PX;
+    border: 1px solid #145A32;
+}
+
+ /*
+ ==========================================
+                ASIDE
+ ==========================================
+ */
+
+
+
+.aside {
+
+   display: flex;
+   justify-content: space-around;
+   position: sticky;
+   top: 20px;
+   width: 20%;
+   height: 175px;
+   margin-top: 20px;
+   
+}
+
+.relacionados{
+    width: 80%;
+    background-color: #145A32;
+    border: 1px solid #17202A;
+    border-radius: 10px;
+}
+
+.rel {
+    display: block;
+    color: #D5F5E3;
+    text-decoration: none;
+    margin-left: 15px;
+    
+    
+}
+
+.tituloRel {
+    color:#D5F5E3;
+    text-align: center;
+}
+
+.volver {
+    display: inline-block;
+    width:10%;
+    height: 40.05px;
+
+    background-color: #145A32;
+    border: 1px solid #17202A;
+    border-radius: 10px;
+    
+}
+
+.fa-home {
+    color: #D5F5E3;
+   margin-top: 7px;
+    
+}
+
+ /*
+ ==========================================
+                FOOTER
+ ==========================================
+ */
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color:#145A32 ;
+    color: #D5F5E3;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info, .derechos, .ap {
+    width: 33%;
+    text-align: center;
+}
